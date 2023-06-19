@@ -31,11 +31,12 @@ const Card = ({ title, imgPath, description, onTagClick, tags, onPlayClick }: Ca
       <button
         className="opacity-0 group-hover:opacity-90 transition-all absolute w-20 h-20 top-2 right-2 z-10 bg-cyan-500 bg-opacity-90 flex justify-center items-center rounded-full m-auto"
         onClick={onPlayClick}
+        data-testid="play-btn"
       >
         <PlayCircleIcon className="h-10 w-10 text-orange-500" />
       </button>
       <div className="flex justify-center">
-        <img className="h-full rounded-full" src={`${imgPath}`} alt="" />
+        <img className="h-full rounded-full" src={`${imgPath}`} alt={`[picture for ${title}`} />
       </div>
       <div className="p-4">
         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-600">
@@ -48,7 +49,7 @@ const Card = ({ title, imgPath, description, onTagClick, tags, onPlayClick }: Ca
 
       <div className="px-2 flex flex-nowrap">
         {tags.map(tag => (
-          <button key={tag} onClick={() => onTagClick(tag)}>
+          <button key={tag} onClick={() => onTagClick(tag)} data-testid="tag">
             <Tag name={tag} />
           </button>
         ))}
