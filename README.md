@@ -6,7 +6,7 @@ Before running this project, please make sure you have the following tools insta
 
 Or make sure you have installed nodejs (16.14.0 recommended) and pnpm (8.6.2 recommended)
 
-- [asdf](https://asdf-vm.com/) (version manager for managing runtime versions)
+- [asdf](https://asdf-vm.com/) (version manager for managing runtime versions). This point is optional. If you don't want to use asdf, just skip the installation
 
 ## Installation
 
