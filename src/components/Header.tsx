@@ -6,7 +6,7 @@ type Props = {
   children?: JSX.Element;
 };
 
-const Header: FC<Props> = () => (
+const Header: FC<Props> = React.memo(() => (
   <div className="
     h-16
     px-4
@@ -47,6 +47,6 @@ const Header: FC<Props> = () => (
       />
     </div>
   </div>
-);
+));
 
-export default React.memo(Header);
+export default Header;

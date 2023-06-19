@@ -45,7 +45,7 @@ export const useStreamLinkStatus = (): UseStreamReturn => {
     return () => {
       isMounted = false;
     };
-  }, [streamUrl]);
+  }, [streamUrl, dispatch]);
 
   return { isLoading, isStreamLinkAlive, streamUrl };
 };

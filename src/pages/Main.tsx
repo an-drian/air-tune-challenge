@@ -20,7 +20,7 @@ function Main() {
 
   useEffect(() => {
     dispatch(fetchStations());
-  }, []);
+  }, [dispatch]);
 
   function onTagClickHandler(tag: string) {
     const newTagsArray = [...tagsToFilterBy].concat(tag);

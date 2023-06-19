@@ -26,7 +26,7 @@ const Station = () => {
     if (station) {
       dispatch(setStreamUrl(station.streamUrl));
     }
-  }, [station]);
+  }, [station, dispatch]);
 
   return (
     <Container>
